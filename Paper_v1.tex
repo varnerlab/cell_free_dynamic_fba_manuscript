@@ -1,0 +1,115 @@
+\documentclass[10pt,twocolumn,twoside,final]{IEEEtran}
+
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+\usepackage{lastpage,fancyhdr,graphicx}
+\usepackage{amssymb,amsmath}
+\usepackage{mathtools}
+\usepackage[square,sort,comma,numbers]{natbib}
+\renewcommand{\bibfont}{\footnotesize}
+
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+% *** SUBFIGURE PACKAGES ***
+\ifCLASSOPTIONcompsoc
+  \usepackage[caption=false,font=footnotesize,labelfont=sf,textfont=sf]{subfig}
+\else
+  \usepackage[caption=false,font=footnotesize]{subfig}
+\fi
+
+\begin{document}
+
+\title{Dynamic Constraints Based Analysis of Cell Free Metabolic Networks}
+
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+\author{\IEEEauthorblockN{Michael Vilkhovoy\IEEEauthorrefmark{1},
+Mason Minot\IEEEauthorrefmark{1},
+Jeffrey D. Varner\IEEEauthorrefmark{1}}\\
+\IEEEauthorblockA{\IEEEauthorrefmark{1}Robert Frederick Smith School of Chemical and Biomolecular Engineering, Cornell University, Ithaca, NY 14850 USA}
+\thanks{Corresponding author: J. Varner (email:jdv27@cornell.edu).}}
+
+\maketitle
+
+\begin{abstract}
+Mathematical models of biochemical networks are useful tools to understand and ultimately predict how cells utilize nutrients to produce valuable products.
+Hybrid cybernetic models in combination with elementary modes (HCM) is a tool to model cellular metabolism.
+However, HCM is limited to reduced metabolic networks because of the computational burden of calculating elementary modes.
+In this study, we developed the hybrid cybernetic modeling with flux balance analysis or HCM-FBA technique which uses flux balance solutions instead of elementary modes
+to dynamically model metabolism.
+We show HCM-FBA has comparable performance to HCM for a proof of concept metabolic network and for a reduced anaerobic \textit{E. coli} network.
+Next, HCM-FBA was applied to a larger metabolic network of aerobic \textit{E. coli} metabolism which was infeasible for HCM (29 FBA modes versus more than 153,000 elementary modes).
+Global sensitivity analysis further reduced the number of FBA modes required to describe the aerobic \textit{E. coli} data, while maintaining model fit.
+Thus, HCM-FBA is a promising alternative to HCM for large networks where the generation of elementary modes is infeasible.
+
+\end{abstract}
+
+
+\begin{IEEEkeywords}
+Metabolic models, flux balance analysis, cybernetic models
+\end{IEEEkeywords}
+
+\section{Introduction}
+
+Cell-free systems offer many advantages for the study, manipulation and modeling of metabolism compared to \textit{in vivo} processes.
+Central amongst these advantages is direct access to metabolites and the microbial biosynthetic machinery without the interference of a cell wall.
+This allows us to control as well as interrogate the chemical environment while the biosynthetic machinery is operating, potentially at a fine time resolution.
+Second, cell-free systems also allow us to study biological processes without the complications associated with cell growth.
+Cell-free protein synthesis (CFPS) systems are arguably the most prominent examples of cell-free systems used today \citep{Jewett:2008aa}.
+However, CFPS is not new; CFPS in crude \textit{E. coli} extracts has been used since the 1960s to explore fundamentally important biological mechanisms \citep{MATTHAEI:1961aa,NIRENBERG:1961aa}. Today, cell-free systems are used in a variety of applications ranging from therapeutic protein production \citep{Lu:2014aa} to synthetic biology \citep{Hodgman:2012aa}. Interestingly, many of the challenges confronting genome-scale kinetic modeling can potentially be overcome in a cell-free system. For example, there is no complex transcriptional regulation to consider, transient metabolic measurements are easier to obtain, and we no longer have to consider cell growth. Thus, cell-free operation holds several significant advantages for model development, identification and validation.
+
+In the post genomics world, genome-scale stoichiometric reconstructions of microbial metabolism popularized by static, constraint-based modeling techniques such as flux balance analysis (FBA) have become standard tools \citep{2012_lewis_palsson_NatRevMicrobio}. Since the first genome-scale stoichiometric model of \textit{E. coli}, developed by Edwards and Palsson \citep{2000_edwards_palsson_PNAS}, well over 100 organisms, including industrially important prokaryotes such as \textit{E. coli} \citep{Feist:2007aa} or \textit{B. subtilis} \citep{Oh:2007aa}, are now available \citep{2009_feist_palsson_NatRevMicrobio}. Stoichiometric models rely on a pseudo-steady-state assumption to reduce unidentifiable genome-scale kinetic models to an underdetermined linear algebraic system, which can be solved efficiently even for large systems. Traditionally, stoichiometric models have also neglected explicit descriptions of metabolic regulation and control mechanisms, instead opting to describe the choice of pathways by prescribing an objective function on metabolism. Interestingly, similar to early cybernetic models, the most common metabolic objective function has been the optimization of biomass formation \citep{2002_ibarra_edwards_palsson_Nat}, although other metabolic objectives have also been estimated \citep{2007_schuetz_sauer_MolSysBio}. Recent advances in constraint-based modeling have overcome the early shortcomings of the platform, including capturing metabolic regulation and control \citep{2013_hyduke_lewis_palsson_MolBioSys}. Thus, constraint-based approaches have proven useful in the discovery of metabolic engineering strategies and represent the state of the art in metabolic modeling \citep{2013_mccloskey_palsson_feist_MolSysBio, 2012_zomorrodi_maranas_MetaEng}.
+
+\section{Results}
+
+
+
+\section{Discussion}
+
+\section{Materials and Methods}
+The balance equation governing species i ($x_{i}$) for a cell free metabolic network consisting of $\mathcal{M}$ metabolites and enzymes is given by:
+\begin{equation}
+  \frac{dx_{i}}{dt} = \sum_{j=1}^{\mathcal{C}}\sigma_{ij}r_{j}+\sum_{d=1}^{\mathcal{K}}\tau_{id}q_{d}(\mathbf{x})\qquad{i=1,\hdots,\mathcal{M}}
+\end{equation}where $\mathcal{C}$ denotes the number calculated fluxes, and $\mathcal{K}$ denotes the number of kinetic fluxes.
+The terms $\sigma_{ij}$ and $\tau_{ik}$ denote stoichiometric coefficients which connect the calculated and kinetic rates $r_{j}$
+and $q_{k}(\mathbf{x})$ to the ith species. If $\sigma_{ij}>0$ or $\tau_{ik}>0$, then species i is produced,
+if $\sigma_{ij}<0$ or $\tau_{ik}<0$ species i is consumed.
+If $\sigma_{ij}=0$ or $\tau_{ik}=0$ then species is not connected with either rate process.
+The balances equations are subject to the initial conditions $x_{i}\left(0\right)$.
+
+The $\mathcal{K}$ kinetic rates take typical saturation forms.
+The $\mathcal{C}$ calculated rates are estimated by solving a convex optimization subproblem at each time step $k$.
+In this study, we explored both linear and non-linear implementations of the flux estimation subproblem.
+The convex subproblem was solved at each time step k, using either the GNU Linear Programming Kit (GLPK) plugin for the linear problem [REF],
+or the Convex plugin for the non-linear problem [REF].
+The model code for all examples, encoded in the Julia programming language [REF], can be downloaded from http://www.varnerlab.org under an MIT license.
+
+The convex subproblem consists of an objective function, material balance and flux bounds constraints.
+The linear objective function:
+\begin{equation}
+  \min_{r_{1},\hdots,r_{\mathcal{C}}} \left(\sum_{j=1}^{\mathcal{C}}c_{j}r_{j}(k)\right)
+\end{equation}
+is minimized subject to the material balance constraints:
+\begin{equation}\nonumber
+  \sum_{j=1}^{\mathcal{C}} \sigma_{ij}r_{j}(k) \geq - \left(\frac{\theta_{i}}{h} + \sum_{d=1}^{\mathcal{K}}\tau_{id}q_{d}(\mathbf{x})\right)~i=1,\hdots,\mathcal{M}\\
+\end{equation}and flux bounds constraints:
+\begin{equation}\nonumber
+  \mathcal{L}_{j}(\mathbf{x})\leq r_{j} \leq \mathcal{U}_{j}(\mathbf{x})\qquad j=1,\hdots,\mathcal{C}
+\end{equation}at each time step $k$.
+The user configurable parameter $\theta_{i}$, defined by $x_{i,k+1}=\left(1-\theta_{i}\right)x_{i,k}$, governs the maximum rate of decrease of the ith species.
+The $\mathcal{L}_{j}(\mathbf{x})$ and $\mathcal{U}_{j}(\mathbf{x})$ functions encode
+the lower and upper bound for the jth flux, while $h$ denotes the time step size.
+
+
+% References -
+\bibliographystyle{naturemag_noURL}
+\bibliography{References_v1}
+
+\end{document}
+\grid

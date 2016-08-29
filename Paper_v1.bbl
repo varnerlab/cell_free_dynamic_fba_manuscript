@@ -1,0 +1,135 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{Jewett:2008aa}
+\bibinfo{author}{Jewett, M.~C.}, \bibinfo{author}{Calhoun, K.~A.},
+  \bibinfo{author}{Voloshin, A.}, \bibinfo{author}{Wuu, J.~J.} \&
+  \bibinfo{author}{Swartz, J.~R.}
+\newblock \bibinfo{title}{An integrated cell-free metabolic platform for
+  protein production and synthetic biology}.
+\newblock \emph{\bibinfo{journal}{Mol Syst Biol}} \textbf{\bibinfo{volume}{4}},
+  \bibinfo{pages}{220} (\bibinfo{year}{2008}).
+
+\bibitem{MATTHAEI:1961aa}
+\bibinfo{author}{Matthaei, J.~H.} \& \bibinfo{author}{Nirenberg, M.~W.}
+\newblock \bibinfo{title}{Characteristics and stabilization of dnaase-sensitive
+  protein synthesis in e. coli extracts}.
+\newblock \emph{\bibinfo{journal}{Proc Natl Acad Sci U S A}}
+  \textbf{\bibinfo{volume}{47}}, \bibinfo{pages}{1580--8}
+  (\bibinfo{year}{1961}).
+
+\bibitem{NIRENBERG:1961aa}
+\bibinfo{author}{Nirenberg, M.~W.} \& \bibinfo{author}{Matthaei, J.~H.}
+\newblock \bibinfo{title}{The dependence of cell-free protein synthesis in e.
+  coli upon naturally occurring or synthetic polyribonucleotides}.
+\newblock \emph{\bibinfo{journal}{Proc Natl Acad Sci U S A}}
+  \textbf{\bibinfo{volume}{47}}, \bibinfo{pages}{1588--602}
+  (\bibinfo{year}{1961}).
+
+\bibitem{Lu:2014aa}
+\bibinfo{author}{Lu, Y.}, \bibinfo{author}{Welsh, J.~P.} \&
+  \bibinfo{author}{Swartz, J.~R.}
+\newblock \bibinfo{title}{Production and stabilization of the trimeric
+  influenza hemagglutinin stem domain for potentially broadly protective
+  influenza vaccines}.
+\newblock \emph{\bibinfo{journal}{Proc Natl Acad Sci U S A}}
+  \textbf{\bibinfo{volume}{111}}, \bibinfo{pages}{125--30}
+  (\bibinfo{year}{2014}).
+
+\bibitem{Hodgman:2012aa}
+\bibinfo{author}{Hodgman, C.~E.} \& \bibinfo{author}{Jewett, M.~C.}
+\newblock \bibinfo{title}{Cell-free synthetic biology: thinking outside the
+  cell}.
+\newblock \emph{\bibinfo{journal}{Metab Eng}} \textbf{\bibinfo{volume}{14}},
+  \bibinfo{pages}{261--9} (\bibinfo{year}{2012}).
+
+\bibitem{2012_lewis_palsson_NatRevMicrobio}
+\bibinfo{author}{Lewis, N.~E.}, \bibinfo{author}{Nagarajan, H.} \&
+  \bibinfo{author}{Palsson, B.~O.}
+\newblock \bibinfo{title}{Constraining the metabolic genotype-phenotype
+  relationship using a phylogeny of in silico methods}.
+\newblock \emph{\bibinfo{journal}{Nat Rev Microbiol}}
+  \textbf{\bibinfo{volume}{10}}, \bibinfo{pages}{291--305}
+  (\bibinfo{year}{2012}).
+
+\bibitem{2000_edwards_palsson_PNAS}
+\bibinfo{author}{Edwards, J.~S.} \& \bibinfo{author}{Palsson, B.~O.}
+\newblock \bibinfo{title}{The escherichia coli mg1655 in silico metabolic
+  genotype: its definition, characteristics, and capabilities}.
+\newblock \emph{\bibinfo{journal}{Proc Natl Acad Sci U S A}}
+  \textbf{\bibinfo{volume}{97}}, \bibinfo{pages}{5528--33}
+  (\bibinfo{year}{2000}).
+
+\bibitem{Feist:2007aa}
+\bibinfo{author}{Feist, A.~M.} \emph{et~al.}
+\newblock \bibinfo{title}{A genome-scale metabolic reconstruction for
+  escherichia coli k-12 mg1655 that accounts for 1260 orfs and thermodynamic
+  information}.
+\newblock \emph{\bibinfo{journal}{Mol Syst Biol}} \textbf{\bibinfo{volume}{3}},
+  \bibinfo{pages}{121} (\bibinfo{year}{2007}).
+
+\bibitem{Oh:2007aa}
+\bibinfo{author}{Oh, Y.-K.}, \bibinfo{author}{Palsson, B.~O.},
+  \bibinfo{author}{Park, S.~M.}, \bibinfo{author}{Schilling, C.~H.} \&
+  \bibinfo{author}{Mahadevan, R.}
+\newblock \bibinfo{title}{Genome-scale reconstruction of metabolic network in
+  bacillus subtilis based on high-throughput phenotyping and gene essentiality
+  data}.
+\newblock \emph{\bibinfo{journal}{J Biol Chem}} \textbf{\bibinfo{volume}{282}},
+  \bibinfo{pages}{28791--9} (\bibinfo{year}{2007}).
+
+\bibitem{2009_feist_palsson_NatRevMicrobio}
+\bibinfo{author}{Feist, A.~M.}, \bibinfo{author}{Herrg{\aa}rd, M.~J.},
+  \bibinfo{author}{Thiele, I.}, \bibinfo{author}{Reed, J.~L.} \&
+  \bibinfo{author}{Palsson, B.~{\O}.}
+\newblock \bibinfo{title}{Reconstruction of biochemical networks in
+  microorganisms}.
+\newblock \emph{\bibinfo{journal}{Nat Rev Microbiol}}
+  \textbf{\bibinfo{volume}{7}}, \bibinfo{pages}{129--43}
+  (\bibinfo{year}{2009}).
+
+\bibitem{2002_ibarra_edwards_palsson_Nat}
+\bibinfo{author}{Ibarra, R.~U.}, \bibinfo{author}{Edwards, J.~S.} \&
+  \bibinfo{author}{Palsson, B.~O.}
+\newblock \bibinfo{title}{Escherichia coli k-12 undergoes adaptive evolution to
+  achieve in silico predicted optimal growth}.
+\newblock \emph{\bibinfo{journal}{Nature}} \textbf{\bibinfo{volume}{420}},
+  \bibinfo{pages}{186--9} (\bibinfo{year}{2002}).
+
+\bibitem{2007_schuetz_sauer_MolSysBio}
+\bibinfo{author}{Schuetz, R.}, \bibinfo{author}{Kuepfer, L.} \&
+  \bibinfo{author}{Sauer, U.}
+\newblock \bibinfo{title}{Systematic evaluation of objective functions for
+  predicting intracellular fluxes in escherichia coli}.
+\newblock \emph{\bibinfo{journal}{Mol Syst Biol}} \textbf{\bibinfo{volume}{3}},
+  \bibinfo{pages}{119} (\bibinfo{year}{2007}).
+
+\bibitem{2013_hyduke_lewis_palsson_MolBioSys}
+\bibinfo{author}{Hyduke, D.~R.}, \bibinfo{author}{Lewis, N.~E.} \&
+  \bibinfo{author}{Palsson, B.~{\O}.}
+\newblock \bibinfo{title}{Analysis of omics data with genome-scale models of
+  metabolism}.
+\newblock \emph{\bibinfo{journal}{Mol Biosyst}} \textbf{\bibinfo{volume}{9}},
+  \bibinfo{pages}{167--74} (\bibinfo{year}{2013}).
+
+\bibitem{2013_mccloskey_palsson_feist_MolSysBio}
+\bibinfo{author}{McCloskey, D.}, \bibinfo{author}{Palsson, B.~{\O}.} \&
+  \bibinfo{author}{Feist, A.~M.}
+\newblock \bibinfo{title}{Basic and applied uses of genome-scale metabolic
+  network reconstructions of escherichia coli}.
+\newblock \emph{\bibinfo{journal}{Mol Syst Biol}} \textbf{\bibinfo{volume}{9}},
+  \bibinfo{pages}{661} (\bibinfo{year}{2013}).
+
+\bibitem{2012_zomorrodi_maranas_MetaEng}
+\bibinfo{author}{Zomorrodi, A.~R.}, \bibinfo{author}{Suthers, P.~F.},
+  \bibinfo{author}{Ranganathan, S.} \& \bibinfo{author}{Maranas, C.~D.}
+\newblock \bibinfo{title}{Mathematical optimization applications in metabolic
+  networks}.
+\newblock \emph{\bibinfo{journal}{Metab Eng}} \textbf{\bibinfo{volume}{14}},
+  \bibinfo{pages}{672--86} (\bibinfo{year}{2012}).
+
+\end{thebibliography}
